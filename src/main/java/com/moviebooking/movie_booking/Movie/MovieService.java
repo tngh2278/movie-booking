@@ -15,4 +15,8 @@ public class MovieService {
         return movieRepository.findAll();
     }
 
+    public Movie getMovie(Long id) {
+        return movieRepository.findById(id)
+                .orElseThrow(); // 영화가 존재하지 않을 시 오류
+    }
 }
