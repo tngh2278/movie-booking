@@ -1,8 +1,6 @@
-package com.moviebooking.Screening;
+package com.moviebooking.movie_booking.Movie.Screening;
 
 import java.time.LocalDateTime;
-
-import org.hibernate.event.spi.LockEventListener;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -47,7 +45,7 @@ public class Screening {
         return theaterId;
     }
 
-    public LocalDateTime getStarTime() {
+    public LocalDateTime getStartTime() {
         return startTime;
     }
 
